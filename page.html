@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oltenita - 2016 - micro web server</title>
+<style>
+.dir{
+    color: blue;
+}
+.col1{
+    width:30px;
+}
+.col2{
+    width:150px;
+}
+.col3{
+    width:150px;
+}
+.col4{
+    width:200px;
+}
+.col1, .col2, .col3, .col4{
+    height: 30px;
+    float:left;
+    overflow:hidden; 
+    margin-bottom: 3px; 
+    //background-color: cyan; 
+    //border: 1px solid black; 
+}
+.endRow{
+    clear:left;
+}
+</style>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="col1"><img src='/home/pi/web/back-arrow.png' alt="back" height="20px" onclick=goBack()></div>
+<br class="endRow">
+
+<!--begin_display-->
+
+<a href="#link#" #download#>
+<div class="col1"><img src='#ico#' alt="type" height="20px"></div>
+<div class="col2">#name#</div>
+<div class="col3">#size#</div>
+<div class="col4">#date#</div>
+</a> 
+<br class="endRow">
+
+<!--end_display-->
+
+</body>
+</html>
